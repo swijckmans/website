@@ -24,7 +24,7 @@
                 <div id="webapp_cover">
                     <div id="menu_button">
                         <input type="checkbox" id="menu_checkbox">
-                        <label for="menu_checkbox" id="menu_label">
+                        <label for="menu_checkbox" id="menu_label" onclick="show_menu()">
                             <div id="menu_text_bar"></div>
                         </label>
                     </div>
@@ -41,7 +41,7 @@
 
                 </a>
 
-                <div class=buttonsthatdostuff  class="top-bar" id="menubar">
+                <div class=buttonsthatdostuff class="top-bar" id="menubar">
                     <div class="social_block">
                         <a class="social_links" href="https://www.instagram.com/lockdown_simon/"><img
                                 src="images/socials/instagram.svg" height="15px"></a>
@@ -63,7 +63,7 @@
         </header>
     </div>
 
-    <div id="hero">
+    <div id="hero" class="herobox">
         <div class="videocontainer">
             <div class="herotext">
                 <h4>
@@ -72,12 +72,15 @@
                 </h4>
                 <h1>SIMON<br>WIJCKMANS</h1>
             </div>
-            <iframe class="herovideoi" style="border: none;" autoplay loop muted
-                src="https://iframe.videodelivery.net/03df38255dd3522a2a1cf4b2cec82e07?muted=true&preload=true&loop=true&autoplay=true&controls=false"></iframe>
+            <div style="z-index: -100; position: relative; padding-top: 56.25%;"><iframe
+                    src="https://iframe.videodelivery.net/60451b2c87689be754f58f80dbfeaed3?muted=true&preload=true&loop=true&autoplay=true&controls=false"
+                    style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"
+                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                    allowfullscreen="true"></iframe></div>
         </div>
     </div>
 
-    <div id="contentdiv">
+    <!-- <div id="contentdiv">
         <div class="contentcontainer1">
             <h2> More stuff is on it's way
             </h2>
@@ -86,7 +89,7 @@
                 because well... I can. YES I know this is not efficient but hey it is a good way to refresh my HTML and
                 CSS knowledge so why not right? Let me know what you think.</p1>
         </div>
-
+    -->
 
     </div>
     <div>
@@ -106,12 +109,14 @@
     </script>
 
     <script>
-        function MakeAppear(right) {
-    var makeAp = document.getElementsByClassName("menuboxmobile")[0];
-    makeAp.style.right = right;
-}
-
-document.getElementById("menu_checkbox").onclick = function() { MakeAppear("0");}
+        function show_menu() {
+            var x = document.getElementsByClassName("menuboxmobile")[0];
+            if (x.style.right === "-1000px") {
+                x.style.right = "0";
+            } else {
+                x.style.right = "-1000px";
+            }
+        }
     </script>
 </body>
 
