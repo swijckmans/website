@@ -168,17 +168,16 @@ header {
     display: none;
 }
 
-#hero {
+#hero {}
 
-}
-.herobox{
+.herobox {
     align-items: center;
     -webkit-box-align: center;
     justify-content: center;
     display: flex;
     overflow: hidden;
     height: 75vh;
-    max-height: 700px;
+    max-height: 45vw;
     -webkit-box-pack: center;
     position: relative;
 }
@@ -203,22 +202,21 @@ header {
     text-overflow: initial;
     color: white;
     font-family: DIN, sans-serif;
-    margin-bottom: 0;
     width: 100% !important;
-    top: 0% !important;
-    height: 60%;
-    
+    height: 100%;
+    top: 50%;
+    transform: translateY( -50%);
 }
 
 .herotext h1 {
+    margin: 0%;
     font-size: 90pt;
-
-      
 }
 
 .herotext h4 {
+    padding-top: 20vh;
+    margin: 0%;
     font-size: 20pt;
-
 }
 
 .herovideoi {
@@ -237,7 +235,6 @@ header {
     object-fit: cover;
     display: inline-block;
     box-sizing: border-box;
-
 }
 
 #contentdiv {
@@ -328,24 +325,31 @@ header {
 }
 
 @media (max-width: 1200px) {
+    .herotext {
+        vertical-align: middle;
+        position: absolute;
+        text-align: center;
+        box-sizing: border-box;
+        text-overflow: initial;
+        color: white;
+        font-family: DIN, sans-serif;
+        width: 100% !important;
+        height: 100%;
+        top: 50%;
+        transform: translateY( -50%);
+    }
     .herotext h1 {
-
-        font-size: 60pt;
-
+        font-size: 10vw;
+        margin: 0%;
     }
     .herotext h4 {
-
-        font-size: 20pt;
-    }
-    h4 span{
+        font-size: 3vw;
+        margin: 0%;
+        padding-top: 14vw;
     }
 }
 
 @media (max-width: 1050px) {
-
-
-
-
     .hero {
         height: 400px;
     }
@@ -410,11 +414,9 @@ header {
     }
     .nav_links a {
         font-size: 20px;
-
     }
     .nav_links:hover {
         font-size: 20px;
-
     }
     .social_block {
         width: 100%;
@@ -447,10 +449,8 @@ header {
         background-color: rgba(0, 0, 0, 0.65);
         border-left: #111111;
         top: 66px;
-
         width: 40vw;
         height: 93vh;
-
         right: -1000px;
         transition: all 0.5s;
         -moz-transition: all 0.5s;
@@ -458,7 +458,6 @@ header {
         -o-transition: all 0.5s;
         -webkit-transition: all 0.5s;
     }
-
     #webapp_cover {
         position: absolute;
         top: 100%;
@@ -521,10 +520,6 @@ header {
     #menu_checkbox:checked+#menu_label #menu_text_bar:before {
         animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
     }
-
-
-
-
     @keyframes moveUpThenDown {
         0% {
             top: 0;
@@ -570,21 +565,18 @@ header {
 }
 
 @media (max-width: 810px) {
-
     .herotext h1 {
-        font-size: 24pt;
-
+        font-size: 10vw;
+        margin: 0%;
     }
     .herotext h4 {
-        font-size: 10pt;
+        font-size: 3vw;
+        margin: 0%;
+        padding-top: 17vw;
     }
     .menuboxmobile {
         width: 100vw;
     }
-    h4 span{
-            top: -50%;
-    }
-
 }
 
 @media screen and (max-width: 950px) {
@@ -596,23 +588,26 @@ header {
         display: block;
     }
 }
-    @media screen and (max-width: 950px) {
-        .top-bar.responsive {position: relative;}
-        .top-bar.responsive .icon {
-            visibility: visible;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .top-bar.headerlogo{
-            visibility: visible;
-        }
-        .top-bar.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-        .top-bar.social_block {
-            visibility: visible;
-        }
-      }
+
+@media screen and (max-width: 950px) {
+    .top-bar.responsive {
+        position: relative;
+    }
+    .top-bar.responsive .icon {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-bar.headerlogo {
+        visibility: visible;
+    }
+    .top-bar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .top-bar.social_block {
+        visibility: visible;
+    }
+}

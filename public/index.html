@@ -65,22 +65,25 @@
 
     <div id="hero" class="herobox">
         <div class="videocontainer">
-            <div class="herotext">
-                <h4>
-                    <span class="text_1">Fixing stuff</span>
-                    <span class="text_2">Because I care</span>
-                </h4>
-                <h1>SIMON<br>WIJCKMANS</h1>
-            </div>
+
             <div style="z-index: -100; position: relative; padding-top: 56.25%;"><iframe
                     src="https://iframe.videodelivery.net/60451b2c87689be754f58f80dbfeaed3?muted=true&preload=true&loop=true&autoplay=true&controls=false"
                     style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"
                     allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                    allowfullscreen="true"></iframe></div>
+                    allowfullscreen="false"></iframe>
+            <div class="herotext">
+                    <h4>
+                        <span class="text_1">Fixing stuff</span>
+                        <span class="text_2">Because I care</span>
+                    </h4>
+                    <h1>SIMON<br>WIJCKMANS</h1>
+                    </div>
+
+                </div>
         </div>
     </div>
 
-    <!-- <div id="contentdiv">
+    <div id="contentdiv">
         <div class="contentcontainer1">
             <h2> More stuff is on it's way
             </h2>
@@ -89,35 +92,12 @@
                 because well... I can. YES I know this is not efficient but hey it is a good way to refresh my HTML and
                 CSS knowledge so why not right? Let me know what you think.</p1>
         </div>
-    -->
 
     </div>
     <div>
 
     </div>
 
-
-
-
-    <script type="text/javascript">
-        window.addEventListener("load", function () {
-            const loader = document.querySelector(".loader");
-            console.log(loader);
-            loader.className += " hidden";
-
-        });
-    </script>
-
-    <script>
-        function show_menu() {
-            var x = document.getElementsByClassName("menuboxmobile")[0];
-            if (x.style.right === "-1000px") {
-                x.style.right = "0";
-            } else {
-                x.style.right = "-1000px";
-            }
-        }
-    </script>
 </body>
 
 </html>
