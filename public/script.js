@@ -7,9 +7,9 @@ window.addEventListener("load", function () {
 
 function show_menu() {
     var x = document.getElementsByClassName("menuboxmobile")[0];
-    if (x.style.right === "-1000px") {
-        x.style.right = "0";
-    } else {
+    if (x.style.right === "0px") {
         x.style.right = "-1000px";
+    } else {
+        x.style.right = "0px";
     }
 }
