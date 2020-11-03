@@ -20,6 +20,7 @@ header {
     border-bottom-color: rgba(255, 255, 255, 0.15);
     background-color: #111111;
     height: 66px;
+    width: 100%;
 }
 
 .header-button {
