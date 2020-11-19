@@ -240,7 +240,6 @@ header {
 }
 
 #contentdiv {
-    padding-top: 6px ;
     color: white;
     flex-wrap: wrap;
     flex-basis: 100%;
@@ -251,6 +250,7 @@ header {
     grid-row-gap: 6px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    padding: 15px;
 }
 .privacypolicyblock{
     grid-column-start: span 4;
@@ -278,37 +278,102 @@ header {
 .about1 h2{
     text-align: center;
 }
+.about1 p1{
+    text-align: center;
+}
+
+.page404{
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+    grid-row-start: span 3;
+    grid-row-end: span 3;
+    background-color: #3f1919;
+    border: 1px solid hsla(0,0%,100%,.15);
+    text-align: center;
+}
+.page404 h2{
+    text-align: center;
+}
+.page404 p1{
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.about2{
+    background-image: linear-gradient(135deg, rgb(240, 142, 57),#ff7700);
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    color: #000000;
+    font-family: DIN,sans-serif;
+}
+
+.about2 h1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.about2 p1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.about3{
+    background-image: linear-gradient(135deg, #dcdcdc,#fefefe);
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    grid-row-start: span 2;
+    grid-row-end: span 2;
+    color: #000000;
+    font-family: DIN,sans-serif;
+}
+.about3 h1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.about3 p1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
 .profilepicture{
     z-index: -100;
     grid-column-start: span 2;
     grid-column-end: span 2;
-    grid-row-start: span 3;
-    grid-row-end: span 3;
-    animation: zoom-profilepic 20s ease 1s forwards;
+    grid-row-start: span 2;
+    grid-row-end: span 2;
+    min-height: 400px;
     background-image: url(images/profilepic.jpg);
-
+    background-position: 50% 0;
+    background-size: cover;
 }
 .profilepicture img{
     width: 100%;
-    object-fit: scale-down;
-    animation: zoom-profilepic 20s ease 1s forwards;
+    object-fit: fill;
 }
-@keyframes zoom-profilepic{
-    0% {
-        opacity: 0;
-        transform: scale(1.4);
-    }
-    5% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1.2);}
-}
+
 .contentcontainer1{
-    grid-column-start: span 2;
-    grid-column-end: span 2;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
     grid-row-start: span 3;
     grid-row-end: span 3;
     flex: 1;
@@ -366,6 +431,73 @@ header {
     font-weight: 500;
 }
 
+.contentbox{
+    background-image: linear-gradient(135deg, #dcdcdc,#fefefe);
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    color: #000000;
+    font-family: DIN,sans-serif;
+    
+}
+
+.contentbox h1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.contentbox h2 {
+    padding-left: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contentbox p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.contentbox2{
+    background-image: linear-gradient(135deg, #dcdcdc,#fefefe);
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    color: #000000;
+    font-family: DIN,sans-serif;
+    
+}
+
+.contentbox2 h1{
+    font-family: DIN,sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.contentbox2 h2 {
+    padding-left: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contentbox2 p1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+.contentbox a{
+    color: #d4ff00;
+    text-decoration: none;
+}
+
 .tweet{
     border: 1px solid hsla(0,0%,100%,.15);
     background-image: linear-gradient(135deg,#1da1f2,#0d90e0);
@@ -373,12 +505,15 @@ header {
     padding-right: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
-    grid-column-start: span 2;
-    grid-column-end: span 2;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+    color: #ffffff;
+    font-family: DIN,sans-serif;
 }
 .tweet h1{
     font-family: DIN,sans-serif;
-    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 12px;
 }
 .tweet h2 {
     padding-left: 16px;
@@ -389,6 +524,25 @@ header {
 .tweet p1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+}
+.tweet a{
+    color: #d4ff00;
+    text-decoration: none;
+}
+.timeline-Tweet-text{
+    line-height: 120%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: DIN,sans-serif;
+}
+.timeline-Tweet-text a{
+    color: #d4ff00;
+    text-decoration: none;
+    font-family: DIN,sans-serif;
+}
+.timeline-Tweet-text h3{
+    font-size: 12px;
+    padding-left: 25px;
 }
 
 .footer {
