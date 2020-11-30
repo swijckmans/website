@@ -3,6 +3,7 @@
 
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6LWW6QVJ0"></script>
+    <meta content="Simon Wijckmans is a techy" name="description">
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -18,7 +19,9 @@
     <title>Simon's story</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/browsericon.png">
-    <link rel="apple-touch-icon" href="images/browsericon.png" />
+    <link rel="apple-touch-icon" href="images/browsericon.png">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
 </head>
 <script src="script.js"></script>
 
@@ -97,15 +100,18 @@
     </div>
 
     <div id="contentdiv">
+        
         <div class="contentcontainer1">
             <h2> Welcome!
             </h2>
             <p1>Techies have websites like Häagen has Dazs.<br>
                 If you know me already scrol around. <br>
-                If you dont: visit the <a>about page</a>, I'm a weird person - trust me you're going to want to read
+                If you don't: visit the <a>about page</a>, I'm a weird person - trust me you're going to want to read
                 this. <br>
                 Finally consider reading some of my <a>blogposts</a>.
                 <br>
+                <br>
+                I hope you enjoy my page full of random thoughts, stuff I'm excited about and pictures.
                 <br>
                 Love, Simon. <br>(not the movie)
             </p1>
@@ -121,30 +127,34 @@
                 <h3><a href="https://redirects.simonwijckmans.com/socials/twitter">@SimonWijckmans</a></h3>
             </div>
         </div>
+        
 
-        <div class="contentbox">
-            <h1>Doing stuff</h1>
-            <p1>Currently working on Jo the fish</p1>
+        <div class="contentbox" onclick="location.href='https://www.jothefish.com'">
+            <h1>What got me thinking</h1>
+            <p1>Imagine how great the world would be if every penny you've ever spent went to respectable and fair human beings.</p1>
+        </div>
+        
+
+        <div onclick="location.href='https://www.theverge.com/21569603/apple-macbook-air-m1-review-price-specs-features-arm-silicon'"; class="contentcontainer2">
+            <h1>Excitinggggg...</h1>
         </div>
 
-        <script>
-            document.addEventListener("message", function () {
-                const iframe = document.getElementById("twitter-widget-0");
-                const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                const text = iframeDocument.getElementsByClassName("timeline-Tweet-text")[0].innerText;
-                console.log(text);
-            })
-        </script>
+        <div class="playlist">
+        <iframe src="https://open.spotify.com/embed/playlist/0a7SuAXAl6N7CcZECtOAXv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
 
 
-
-
+    <div class="contentcontainer3">
+        <h2>
+            Website under development.
+        </h2>
+    </div>
     </div>
 
     <div class="footer">
         <div class="policy">
             <ul>
-                <li><a tabindex="0" href="birthday">birthday wishlist</a></li>
+                <li><a tabindex="0" href="https://notion.simonwijckmans.com/wishlist">birthday wishlist</a></li>
                 <li><a tabindex="0" href="privacy.html">privacy policy</a></li>
             </ul>
         </div>
